@@ -1,0 +1,42 @@
+.dark {
+  background-color: $Verydarkcyan;
+
+  .btn {
+      width: 100%;
+      background-color: $Strong-cyan;
+      color: $Verydarkcyan;
+      font-size: 18px;
+      padding: 0.7em 0;
+  }
+}
+
+.field {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1em 1em;
+  grid-template-areas:
+    "title      value"
+    "subtitle   value";
+
+    margin: 1em 0;
+  .title {
+    font-size: 16px;
+    font-weight: 700;
+    color: $Lightgrayishcyan2;
+    grid-area: title;
+  }
+
+  .subtitle {
+    font-size: 14px;
+    color: $Darkgrayishcyan2;
+    grid-area: subtitle;
+  }
+
+  .value {
+      grid-area: value;
+      font-size: 30px;
+      text-align: right;
+      font-weight: 700;
+      color: $Strong-cyan;
+  }
+}

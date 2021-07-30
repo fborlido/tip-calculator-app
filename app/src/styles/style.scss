@@ -1,0 +1,54 @@
+// VARIABLES
+
+// Layout
+$Mobile: 375px;
+$Desktop: 1440px;
+
+// Colors
+
+$Strong-cyan: hsl(172, 67%, 45%);
+
+$Verydarkcyan: hsl(183, 100%, 15%);
+$Darkgrayishcyan1: hsl(186, 14%, 43%);
+$Darkgrayishcyan2: hsl(184, 14%, 56%);
+$Lightgrayishcyan1: hsl(185, 41%, 84%);
+$Lightgrayishcyan2: hsl(189, 41%, 97%);
+$White: hsl(0, 0%, 100%);
+
+// Typography
+
+$Fontsize: 24px;
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: $Lightgrayishcyan1;
+  font-family: "Space Mono", monospace;
+  font-size: $Fontsize;
+}
+
+h1 {
+  color: $Darkgrayishcyan1;
+  text-align: center;
+  font-size: $Fontsize;
+  line-height: 1.2em;
+  letter-spacing: 0.5em;
+  margin: 2em 0;
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+  margin: 1em 0;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+@import "../components/card/card";
+@import "../components/input/input";
+@import "../components/output/output";

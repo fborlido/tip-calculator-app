@@ -1,0 +1,158 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  background-color: #c5e4e7;
+  font-family: "Space Mono", monospace;
+  font-size: 24px;
+}
+
+h1 {
+  color: #5e7a7d;
+  text-align: center;
+  font-size: 24px;
+  line-height: 1.2em;
+  letter-spacing: 0.5em;
+  margin: 2em 0;
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+  margin: 1em 0;
+}
+
+.attribution a {
+  color: #3e52a3;
+}
+
+.card {
+  background-color: white;
+  border-radius: 1em;
+  padding: 1em;
+}
+
+.control {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-bottom: 1em;
+}
+
+.control label {
+  font-size: 18px;
+  font-weight: 700;
+  color: #5e7a7d;
+  margin-bottom: 0.4em;
+}
+
+.control .input-holder {
+  position: relative;
+}
+
+.control .input-holder input {
+  background-color: #f4fafa;
+  border-radius: 0.2em;
+  border: none;
+  padding: 0.2em 1em;
+  text-align: right;
+  color: #00494d;
+  font-size: 24px;
+  font-weight: 700;
+  font-family: "Space Mono", monospace;
+  width: 100%;
+}
+
+.control .input-holder input:focus {
+  outline: none;
+}
+
+.control .input-holder img {
+  position: absolute;
+  left: 0;
+  margin: 15px 0 0 20px;
+}
+
+.control .btn-list {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+  gap: 0.7em;
+}
+
+.btn {
+  font-family: "Space Mono", monospace;
+  font-size: 24px;
+  background-color: #00494d;
+  border: none;
+  padding: 0.2em 1em;
+  color: white;
+  font-weight: 700;
+  border-radius: 0.2em;
+}
+
+.btn:focus {
+  background-color: #26c0ab;
+  color: #00494d;
+}
+
+.dark {
+  background-color: #00494d;
+}
+
+.dark .btn {
+  width: 100%;
+  background-color: #26c0ab;
+  color: #00494d;
+  font-size: 18px;
+  padding: 0.7em 0;
+}
+
+.field {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+  -ms-grid-rows: 1em 1em;
+      grid-template-rows: 1em 1em;
+      grid-template-areas: "title      value" "subtitle   value";
+  margin: 1em 0;
+}
+
+.field .title {
+  font-size: 16px;
+  font-weight: 700;
+  color: #f4fafa;
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  grid-area: title;
+}
+
+.field .subtitle {
+  font-size: 14px;
+  color: #7f9c9f;
+  -ms-grid-row: 2;
+  -ms-grid-column: 1;
+  grid-area: subtitle;
+}
+
+.field .value {
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 2;
+  -ms-grid-column: 2;
+  grid-area: value;
+  font-size: 30px;
+  text-align: right;
+  font-weight: 700;
+  color: #26c0ab;
+}
+/*# sourceMappingURL=style.css.map */

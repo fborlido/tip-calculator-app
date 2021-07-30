@@ -1,0 +1,61 @@
+.control {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 1em;
+
+  label {
+    font-size: 18px;
+    font-weight: 700;
+    color: $Darkgrayishcyan1;
+    margin-bottom: 0.4em;
+  }
+
+  .input-holder {
+    position: relative;
+
+    input {
+      background-color: $Lightgrayishcyan2;
+      border-radius: 0.2em;
+      border: none;
+      padding: 0.2em 1em;
+      text-align: right;
+      color: $Verydarkcyan;
+      font-size: $Fontsize;
+      font-weight: 700;
+      font-family: "Space Mono", monospace;
+      width: 100%;
+
+      &:focus {
+        outline: none;
+      }
+    }
+
+    img {
+      position: absolute;
+      left: 0;
+      margin: 15px 0 0 20px;
+    }
+  }
+
+  .btn-list {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 0.7em;
+  }
+}
+
+.btn {
+  font-family: "Space Mono", monospace;
+  font-size: $Fontsize;
+  background-color: $Verydarkcyan;
+  border: none;
+  padding: 0.2em 1em;
+  color: $White;
+  font-weight: 700;
+  border-radius: 0.2em;
+
+  &:focus {
+    background-color: $Strong-cyan;
+    color: $Verydarkcyan;
+  }
+}
